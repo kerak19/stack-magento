@@ -1,7 +1,7 @@
 magento_backend_frontname: admin
 magento_admin_firstname: admin
 magento_admin_lastname: admin
-magento_admin_email: root@localhost.local
+magento_admin_email: root@example-cycloid.com
 magento_admin_user: admin
 magento_admin_password: 4Bigs3cr3t
 
@@ -120,6 +120,7 @@ nginx_sites:
             stub_status on;
             access_log   off;
             allow 127.0.0.1;
+            allow 127.0.0.2;
             deny all;
           }
         - set $pool "{{ansistrano_user}}"
