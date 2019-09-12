@@ -186,6 +186,6 @@ resource "aws_cloudwatch_metric_alarm" "recover-front" {
   metric_name               = "StatusCheckFailed_System"
   namespace                 = "AWS/EC2"
   period                    = "60"
-  stat               = "Average"
+  statistic                 = "Average"
   threshold                 = "0"
 }
