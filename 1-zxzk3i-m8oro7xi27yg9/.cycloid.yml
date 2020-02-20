@@ -1,0 +1,15 @@
+name: stack-magento-cs
+canonical: 1-zxzk3i-m8oro7xi27yg9
+author: Ja
+description: Ty
+type: stack
+image: ""
+keywords: []
+technologies: []
+config:
+  pipeline:
+    pipeline:
+      path: pipeline/terraform-pipeline.yaml
+    variables:
+      destination: ($ project $)/pipeline/variables-($ environment $).yml
+      path: pipeline/variables.sample.yaml
